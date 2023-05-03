@@ -10,6 +10,7 @@
   --btn-border-color-light: #e7e9fc;
   --secondary-text-color-theme-dark: #4d5ae5;
 }
+
 body {
   font-family: var(--font-family);
   color: var(--primary-text-color-theme-dark);
@@ -23,10 +24,39 @@ body {
 }
 button {
   cursor: pointer;
-  font-family: inherit;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* Header */
-/* Logo */
+.logo-part-container {
+  display: flex;
+  align-items: center;
+}
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -37,6 +67,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color-theme-dark);
+  margin-right: 76px;
+  
 }
 .logo-part {
   font-family: 'Raleway', sans-serif;
@@ -48,6 +80,13 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-background-color-theme-dark);
+ 
+}
+.page-nav {
+  display: flex;
+}
+.menu {
+  display: flex;
 }
 .menu-list-item {
   font-weight: 500;
@@ -56,12 +95,16 @@ button {
   letter-spacing: 0.02em;
   color: var(--primary-background-color-theme-dark);
 }
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
 .menu-list-item:hover,
 .menu-list-item:focus {
   color: var(--accent-color);
 }
 .contact-item-list {
   font-style: normal;
+  margin-left: auto;
 }
 .contact-item {
   font-style: normal;
@@ -70,14 +113,16 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
+  margin-right: 40px;
 }
 .contact-item:hover,
 .contact-item:focus {
   color: var(--accent-color);
 }
 
+
 /* Main Studio*/
-.hero-text {
+.hero-block {
   background-color: var(--primary-background-color-theme-dark);
 }
 .main-text {
