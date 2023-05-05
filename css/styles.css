@@ -55,14 +55,16 @@ img {
 .logo-part-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   /* justify-content: space-between; */
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
