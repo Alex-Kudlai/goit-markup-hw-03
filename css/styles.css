@@ -317,11 +317,11 @@ img {
   text-transform: uppercase;
   color: var(--secondary-text-color-theme-light);
 }
-.footer-container {
+/* .footer-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
+} */
 /* Main portfolio */
 .section-portfolio {
   padding: 96px 0 120px;
