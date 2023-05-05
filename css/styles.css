@@ -43,10 +43,8 @@ img {
 }
 .container {
   width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: auto;
+  padding: 0 15px;
 }
 .section {
   padding-top: 120px;
@@ -75,6 +73,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color-theme-dark);
+  margin-right: 76px;
 }
 .logo-part {
   font-family: 'Raleway', sans-serif;
@@ -90,13 +89,17 @@ img {
 .page-nav {
   display: flex;
   align-items: center;
-  column-gap: 76px;
+  gap: 40px;
+  /* column-gap: 76px; */
 }
 
 .menu {
   display: flex;
   /* justify-content: flex-end; */
-  column-gap: 40px;
+  gap: 40px;
+}
+.menu-item {
+  padding: 24px 0;
 }
 .menu-list-item {
   font-weight: 500;
@@ -165,11 +168,14 @@ img {
   padding: 16px 32px 16px 32px;
   display: block;
   list-style: none;
-  /* min-width: 169px; */
+  min-width: 169px;
+  height: 56px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
+  border: none;
 }
+
 .order-btn:hover,
 .order-btn:focus {
   background-color: var(--accent-color);
@@ -181,17 +187,17 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-background-color-theme-dark);
+  margin-bottom: 8px;
 }
 .feature-descr {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
-  margin-bottom: 8px;
 }
 
 .first-section-container-item {
-  flex-basis: calc((100% - 2 * 24px) / 3);
+  width: calc((100% - 72px) / 4);
 }
 
 .first-section-container {
@@ -203,6 +209,9 @@ img {
 /* Section 2 */
 .second-section {
   padding-bottom: 120px;
+}
+.title-section {
+  margin-bottom: 72px;
 }
 .title {
   font-weight: 700;
@@ -226,7 +235,13 @@ img {
   gap: 24px;
   margin-top: 72px;
 }
+.second-section-card {
+  width: calc((100% - 48px) / 3);
+}
 /* Section 3 */
+.title-section-team {
+  margin-bottom: 72px;
+}
 .team-card {
   background-color: var(--secondary-text-color-theme-light);
 }
@@ -243,7 +258,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-background-color-theme-dark);
-  margin-top: 32px;
+  /* margin-top: 32px; */
   margin-bottom: 8px;
   text-align: center;
 }
@@ -252,17 +267,32 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   text-align: center;
 }
 .team-card-container {
   display: flex;
-  margin-top: 72px;
   gap: 24px;
 }
+.team-description {
+  padding: 32px 16px;
+}
 /* Footer */
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color-theme-dark);
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer-style {
   background-color: var(--primary-background-color-theme-dark);
+  padding: 100px 0;
 }
 .footer-content {
   font-weight: 400;
@@ -278,7 +308,7 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
+  /* display: inline-block; */
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -286,13 +316,15 @@ img {
 }
 .footer-container {
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
   flex-direction: column;
   align-items: flex-start;
 }
 /* Main portfolio */
-
+.section-pornfolio {
+  padding: 96px 0 120px;
+}
 .main-nav {
   font-weight: 500;
   font-size: 16px;
@@ -304,6 +336,7 @@ img {
   background-color: var(--secondary-text-color-theme-light);
   border: 1px solid var(--btn-border-color-light);
   border-radius: 4px;
+  padding: 12px 24px;
 }
 .main-nav-item {
   display: flex;
@@ -311,7 +344,7 @@ img {
   align-items: flex-start;
   justify-content: center;
   gap: 24px;
-  margin-top: 96px;
+  /* margin-top: 96px; */
   margin-bottom: 72px;
 }
 .first-nav-btn:hover,
@@ -346,6 +379,8 @@ img {
 
 .card-style {
   border: 1px solid var(--btn-border-color-light);
+  padding: 32px 16px;
+  border-top: none;
 }
 .card-section-item {
   flex-basis: calc((100% - 48px) / 3);
