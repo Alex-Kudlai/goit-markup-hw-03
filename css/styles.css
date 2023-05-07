@@ -51,59 +51,51 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Header */
 .logo-part-container {
   display: flex;
   align-items: center;
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
-  /* justify-content: space-between; */
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  display: flex;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color-theme-dark);
   margin-right: 76px;
 }
 .logo-part {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--primary-background-color-theme-dark);
 }
 .page-nav {
   display: flex;
   align-items: center;
   gap: 40px;
-  /* column-gap: 76px; */
 }
 
 .menu {
   display: flex;
-  /* justify-content: flex-end; */
   gap: 40px;
 }
-/* .menu-item {
-  padding: 24px 0;
-} */
+
 .menu-list-item {
   font-weight: 500;
   font-size: 16px;
@@ -111,10 +103,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-background-color-theme-dark);
   padding: 24px 0;
+  display: block;
 }
-/* .menu-item:not(:last-child) {
-  margin-right: 40px;
-} */
+
 .menu-list-item:hover,
 .menu-list-item:focus {
   color: var(--accent-color);
@@ -185,7 +176,8 @@ img {
   background-color: var(--accent-color);
 }
 /* Section 1 */
-.feature-name {
+
+.title-features .feature-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -214,9 +206,7 @@ img {
 .second-section {
   padding-bottom: 120px;
 }
-.title-section {
-  margin-bottom: 72px;
-}
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -229,24 +219,23 @@ img {
   margin: 0px;
   margin-bottom: 72px;
 }
-.card-item-style {
+
+/* .card-item-style {
   box-sizing: border-box;
   border: 1px solid var(--btn-border-color-light);
-}
+} */
+
 .title-item-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 24px;
-  margin-top: 72px;
 }
 .second-section-card {
   width: calc((100% - 48px) / 3);
 }
 /* Section 3 */
-.title-section-team {
-  margin-bottom: 72px;
-}
+
 .team-card {
   background-color: var(--secondary-text-color-theme-light);
 }
@@ -263,7 +252,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-background-color-theme-dark);
-  /* margin-top: 32px; */
   margin-bottom: 8px;
   text-align: center;
 }
@@ -272,7 +260,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
-  /* margin-bottom: 32px; */
   text-align: center;
 }
 .team-card-container {
@@ -288,7 +275,6 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color-theme-dark);
@@ -305,25 +291,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-theme-light);
-  margin-top: 16px;
   max-width: 264px;
 }
 .logo-part-secondary {
-  font-family: 'Raleway';
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: inline-block;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--secondary-text-color-theme-light);
 }
-/* .footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-} */
+
 /* Main portfolio */
 .section-portfolio {
   padding: 96px 0 120px;
@@ -351,7 +324,6 @@ img {
   align-items: flex-start;
   justify-content: center;
   gap: 24px;
-  /* margin-top: 96px; */
   margin-bottom: 72px;
 }
 .first-nav-btn:hover,
@@ -365,7 +337,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-background-color-theme-dark);
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 .card-link {
@@ -373,11 +344,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
-  margin-bottom: 32px;
 }
 .card-section {
   padding-top: 0px;
-  /* padding-bottom: 120px; */
   display: flex;
   column-gap: 24px;
   row-gap: 48px;
