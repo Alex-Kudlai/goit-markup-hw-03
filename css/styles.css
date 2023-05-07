@@ -176,8 +176,7 @@ img {
   background-color: var(--accent-color);
 }
 /* Section 1 */
-
-.title-features .feature-name {
+.feature-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
